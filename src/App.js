@@ -113,7 +113,8 @@ function App() {
                         <p>
                             Merhaba ben <strong>Ömer Faruk Yiğit</strong>, 7 Temmuz 2005 tarihinde Yalova'da doğdum.
                             Balıkesir üniversitesi bilgisayar mühendisliği 2. sınıf öğrencisiyim.
-                            Bilgisayarlara ve teknolojiye ilgiliyim. Burada öğrendiğim bilgileri faydalı şeyler geliştirerek hayata geçirmeyi planlıyorum.
+                            Bilgisayarlara ve teknolojiye ilgiliyim.Amacım; öğrendiğim bilgileri gerçek hayattaki sorunlara çözüm üretecek uygulamalara dönüştürmek.
+                            Ayrıca yeni teknolojileri öğrenmeye açık, üretmeyi ve paylaşmayı seven biriyim.
                         </p>
                     </motion.div>
                 </motion.section>
