@@ -231,7 +231,7 @@ function App() {
                 <a href="https://www.linkedin.com/in/ömerfarukyigit" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                     <LinkedInIcon />
                 </a>
-                <a href="https://github.com/omerfarukYigit77/omerport" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <a href="https://github.com/omerfarukYigit77" target="_blank" rel="noreferrer" aria-label="GitHub">
                     <GithubIcon />
                 </a>
             </footer>
