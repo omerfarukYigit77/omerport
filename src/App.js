@@ -157,7 +157,7 @@ function App() {
                     variants={sectionVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: false, amount: 0.2 }}
                 >
                     <h2>Portfolyo</h2>
                     <motion.div className="portfolio-grid" variants={containerVariants}>

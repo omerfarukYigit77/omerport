@@ -197,9 +197,14 @@
   color: #ffffff;
 }
 
-.portfolio-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+@media (max-width: 768px) {
+  .portfolio-card {
+    width: 90%;
+  }
+
+  .portfolio-section h2 {
+    font-size: 2rem;
+  }
 }
 
 .portfolio-grid {
@@ -208,7 +213,16 @@
   justify-content: center;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .portfolio-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .portfolio-card {
+    width: 95%;
+  }
+}
 .portfolio-card {
   background-color: white;
   border-radius: 12px;
@@ -241,7 +255,11 @@
   font-size: 1rem;
   color: #555;
 }
-
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 40px 15px;
+  }
+}
 /* İletişim Bölümü */
 form {
   display: flex;
