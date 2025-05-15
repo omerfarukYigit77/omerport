@@ -76,7 +76,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #111;
+  background: #100606;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -86,40 +86,44 @@
 
 .images-wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Tıklamayı engelle */
+  pointer-events: none;
   z-index: 0;
 }
 
+/* Küçük boy, dekoratif çapraz duruş */
 .img-left,
 .img-right {
   position: absolute;
-  width: 50%;
-  max-width: 600px;
-  opacity: 0.3;
+  width: 325px;
+  opacity: 0.8;
   object-fit: cover;
+  transform-origin: center;
+  border-radius: 10px;
 }
 
+/* Sol üstte eğik Yalova */
 .img-left {
-  top: 10%;
-  left: -10%;
-  transform: rotate(-10deg);
+  top: 40px;
+  left: 30px;
+  transform: rotate(-20deg);
 }
 
+/* Sağ altta eğik Balıkesir */
 .img-right {
-  bottom: 10%;
-  right: -10%;
-  transform: rotate(10deg);
+  bottom: 40px;
+  right: 30px;
+  transform: rotate(20deg);
 }
+
+
 
 .text-overlay {
   position: relative;
   z-index: 1;
   max-width: 800px;
-  color: white;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -188,9 +192,9 @@
 /* Portfolyo Bölümü */
 .portfolio-section {
   padding: 80px 20px;
-  background-color: #eaeaea;
+  background-color: #100606;
   text-align: center;
-  color: #222;
+  color: #ffffff;
 }
 
 .portfolio-section h2 {
@@ -446,4 +450,50 @@ button:hover {
 
 @keyframes blink {
   50% { border-color: transparent }
+}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .img-left,
+  .img-right {
+    width: 120px;
+    opacity: 0.3;
+    transform: rotate(0deg);
+  }
+
+  .img-left {
+    top: 20px;
+    left: 10px;
+  }
+
+  .img-right {
+    bottom: 20px;
+    right: 10px;
+  }
+
+  .navbar ul {
+    width: 200px;
+    right: 10px;
+  }
+
+  .navbar li a {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 20px;
+  }
 }

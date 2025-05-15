@@ -104,23 +104,10 @@ function App() {
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.5 }}
                 >
-                    <motion.div
-                        className="images-wrapper"
-                        variants={containerVariants}
-                    >
-                        <motion.img
-                            src="/yalova.jpg"
-                            alt="Yalova"
-                            className="img-left"
-                            variants={itemVariants}
-                        />
-                        <motion.img
-                            src="/balikesir.png"
-                            alt="Balıkesir"
-                            className="img-right"
-                            variants={itemVariants}
-                        />
-                    </motion.div>
+                    <div className="images-wrapper">
+                        <img src="/yalova.jpg" alt="Yalova" className="img-left" />
+                        <img src="/balikesir.png" alt="Balıkesir" className="img-right" />
+                    </div>
                     <motion.div className="text-overlay" variants={itemVariants}>
                         <h2>Ben Kimim?</h2>
                         <p>
