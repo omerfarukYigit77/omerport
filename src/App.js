@@ -1,5 +1,4 @@
 import React from 'react';
-import benPhoto from './ben.jpeg';
 import './App.css';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -79,7 +78,7 @@ function App() {
                 className="hero-section" id="anasayfa">
                 <div className="overlay" />
                 <div className="hero-content">
-                    <img src={benPhoto} alt="Ben" className="hero-photo" />
+                    <img src="/ben.jpeg" alt="Ben" className="hero-photo" />
                     <h1 className="hero-title">
                         <Typewriter
                             words={['Ömer Faruk Yiğit']}
