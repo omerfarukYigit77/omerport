@@ -57,6 +57,13 @@ const itemVariants = {
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const scrollToSection = (id) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+            setMenuOpen(false);
+        }
+    };
 
     return (
 
@@ -67,11 +74,11 @@ function App() {
                     ☰
                 </div>
                 <ul className={menuOpen ? "open" : ""}>
-                    <li><a href="#anasayfa" onClick={() => setMenuOpen(false)}>Ana Sayfa</a></li>
-                    <li><a href="#benkimim" onClick={() => setMenuOpen(false)}>Ben Kimim</a></li>
-                    <li><a href="#neler-yapabilirim" onClick={() => setMenuOpen(false)}>Neler Yapabilirim</a></li>
-                    <li><a href="#portfolyo" onClick={() => setMenuOpen(false)}>Portfolyo</a></li>
-                    <li><a href="#iletisim" onClick={() => setMenuOpen(false)}>İletişim</a></li>
+                    <li><button onClick={() => scrollToSection('anasayfa')}>Ana Sayfa</button></li>
+                    <li><button onClick={() => scrollToSection('benkimim')}>Ben Kimim</button></li>
+                    <li><button onClick={() => scrollToSection('neler-yapabilirim')}>Neler Yapabilirim</button></li>
+                    <li><button onClick={() => scrollToSection('portfolyo')}>Portfolyo</button></li>
+                    <li><button onClick={() => scrollToSection('iletisim')}>İletişim</button></li>
                 </ul>
             </nav>
             <header

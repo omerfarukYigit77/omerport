@@ -515,3 +515,18 @@ button:hover {
     padding: 20px;
   }
 }
+.navbar ul li button {
+  background: none;
+  border: none;
+  color: #cfbaba;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li button:hover {
+  color: white;
+}
